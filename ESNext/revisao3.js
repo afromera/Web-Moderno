@@ -18,7 +18,7 @@ const pessoa = {
 
 console.log(`${pessoa.nome} disse: ${pessoa.ola()}`)
 
-//classe
+//Classes
 class Animal {
     peso(){
         return 30
