@@ -31,6 +31,12 @@
         console.log('nomeName', src.nodeName)
         console.log('nodeValue', src.nodeValue)
 
+        const link = document.querySelector('a')
+        console.log('Elemento a..........')
+        console.log('href', link.href)
+        console.log('firstChild.nodeType', link.firstChild.nodeType)
+        link.firstChild.nodeValue = 'Texto alterado'
+
 
 
     </script>
