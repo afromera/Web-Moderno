@@ -17,7 +17,27 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino=escritório]')
+        console.log('Elemento "ul"..................')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino) // não consegue obter pq é atriuto customizado
+        console.log('getAttribute', lista.getAttribute('destino'))
+        console.log('hasAttribute', lista.hasAttribute('destino'))
+        lista.setAttribute('destino', 'empresa')
+        lista.setAttribute('status', 'aberta')
+        lista.removeAttribute('destino')
+        console.log('data-urgencia', lista.dataset.urgencia) // quando o atributo customizado tiver o prefixo "data-"
+        lista.dataset.urgencia = 4 //conseguimos alterar usando o dataset
+        console.log('getAttribute', lista.getAttribute('data-urgencia'))
+
+        // existe algum atributos que para acessar seu conteúdo o nome não é o mesmo informado na tag html
+        // por exemplo "for"
+        const label = document.querySelector('label')
+        console.log('for', label.for) // não consegue obter
+        console.log('htmlFor', label.htmlFor) // forma correta
+        console.log('getAttribute', label.getAttribute('for'))
+
+
     </script>
 </body>
 
