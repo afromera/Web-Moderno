@@ -16,7 +16,22 @@
         </ul>
     </div>
     <script>
-        // ...
+        //somente leitura
+        const lista = document.querySelector('#compras')
+        console.log(lista.attributes)
+        console.log(lista.attributes[0])
+        console.log(lista.attributes.id)
+        console.log(lista.attributes[1])
+        console.log(lista.attributes.destino)
+        //console.log(lista.attributes.data-urgencia) // não funciona pq para o javascript "-" é um caractere especial
+        console.log(lista.attributes['data-urgencia'])
+
+        // a alteração não tem efeito no DOM ou seja não altera o HTML
+        lista.attributes.destino = 3
+        console.log(lista.attributes.destino)
+        console.log(lista.attributes.id.value)
+
+
     </script>
 </body>
 
