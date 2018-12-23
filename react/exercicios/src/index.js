@@ -10,7 +10,9 @@ import ReactDOM from 'react-dom'
 import Pai from './componentes/Pai'
 
 ReactDOM.render(
-    
-    <Pai nome='Alex' sobrenome='Romera' />
+
+    <Pai nome='Alex' sobrenome='Romera'>
+        {/* Como passar os filhor por aqui? */}
+    </Pai>
 
 ,document.getElementById('root'))
